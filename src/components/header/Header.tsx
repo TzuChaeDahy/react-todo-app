@@ -12,7 +12,7 @@ const Header = () => {
     );
 
   return (
-    <header className="bg-linear-to-bl from-violet-500 to-fuchsia-500 pt-20 pb-48 -mb-10">
+    <header className="bg-linear-to-bl from-violet-500 to-fuchsia-500 pt-20 pb-36 -mb-24">
       <section className="flex items-center justify-between w-full max-w-3xl mx-auto">
         <h1 className="tracking-widest font-bold text-4xl uppercase">Todo</h1>
         <button className="cursor-pointer" onClick={toggleTheme}>
