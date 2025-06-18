@@ -7,7 +7,7 @@ interface ApiContextType {
 export const ApiContext = createContext<ApiContextType | null>(null);
 
 export const ApiProvider = ({ children }: { children: React.ReactNode }) => {
-  const apiUrl = "http://localhost:3000";
+  const apiUrl = import.meta.env.VITE_BACKEND_API_URL || "http://localhost:3000";
 
   const context: ApiContextType = {
     url: apiUrl,
